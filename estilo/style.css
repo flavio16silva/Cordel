@@ -1,0 +1,79 @@
+@charset "UTF8";
+
+/*Configurações Gerais - resetando todos os elementos*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Tamanho minimo da view port, ou seja, 100% da altura da vh*/
+html, body {
+  min-height: 100vh;
+  background-color:darkgray;
+}
+
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/*Cordel Moderno*/
+header > h1 {
+  padding-top: 50px;
+  /*text-transform: uppercase;  - Transforma todas as letras em maiusculas*/
+  font-variant: small-caps; /*Todas as letras são maiusculas, mas as primeiras em tamanho maior. */
+}
+
+/*paragrafo com o nome do autor*/
+header > p {
+  padding-bottom:50px ;
+}
+
+/*Links da pagina*/
+header a, footer a {
+  color:white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/*Ao passar do mouse*/
+header a:hover footer a:hover {
+  text-decoration: underline;
+}
+
+/*Sessões - todas - 10% da altura da pagina*/
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 20px;
+}
+
+
+/*Sessões - normais*/
+section.normal {
+  background-color: white;
+  color: black;
+}
+
+/*Sessões - imagem*/
+section.imagem {
+  background-color: rgb(42, 41, 41);
+  color: white;
+}
+
+/*Sessões - imagem - paragrafo (pre)*/
+section.imagem > pre {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.376);
+}
+
+
+/*Rodape*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
