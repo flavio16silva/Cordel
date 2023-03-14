@@ -98,7 +98,7 @@ section.normal > pre {
 
 /*Sessões - imagem*/
 /*Sombra interna - box-shadow:inset 6px 6px 13px 0px black;*/
-/*background-size: cover; - centralizar*/
+/*background-size: cover; - centralizar, ocupar todo o espaço*/
 section.imagem {
   background-color: rgb(42, 41, 41);
   color: white;
