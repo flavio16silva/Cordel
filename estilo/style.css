@@ -1,15 +1,16 @@
 @charset "UTF8";
 
-/*@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Passion+One:wght@400;700;900&family=Passions+Conflict&display=swap');*/
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
   --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte2: 'Sriracha', cursive; /*Titulos*/
-  --fonte3: 'Dancing Script', cursive; /*Conteudos*/
+  --fonte2: 'Passion One', cursive; /*Titulos*/
+  --fonte3: 'Sriracha', cursive; /*Conteudos*/
+  
 }
 
 /*Configurações Gerais - resetando todos os elementos*/
@@ -23,9 +24,9 @@
 /*1024PX - 1200PX = DESKTOPS*/
 /*1200PX E + PX = TELAS MAIORES, TVS*/
 
+
 /*Tamanho minimo da view port, ou seja, 100% da altura da vh*/
 html, body {
-  min-height: 100vh;
   background-color:darkgray;
   font-family: var(--fonte1);
 }
@@ -45,13 +46,15 @@ header > h1 {
   font-variant: small-caps; 
   font-family: var(--fonte2); 
    /*font-size: 4em; 10% da largura da tela*/
-   font-size: 10vw;
+  /*font-size: 10vw; */
+  font-size: 5vw;
   
 }
 
 /*paragrafo com o nome do autor - Milton Duarte*/
 header > p {
   padding-bottom: 50px;  
+  font-size: 2vw;
 
 }
 
@@ -59,7 +62,7 @@ header > p {
 header a, footer a {
   color:white;
   text-decoration: none;
-  font-weight: bolder;
+  
 }
 
 /*Ao passar do mouse*/
@@ -70,38 +73,70 @@ header a:hover footer a:hover {
 /*Sessões - todas - 10% da altura da pagina*/
 section {
   padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
   line-height: 2em;
-  padding-left: 20px;
+  padding-left: 5px;
   font-family: var(--fonte3);
-  font-size: 3.5vw;
-    
+  font-size: 2vw;
 }
 
 /*Sessões - normais*/
 section.normal {
   background-color: white;
   color: black;
+  padding-top: 20px;
+  
 }
 
 /*Sessões - normal - paragrafo (pre)*/
 section.normal > pre {
   font-family: var(--fonte3);
+  padding-left: 25px;
+  text-align: left;
+    
 }
 
 /*Sessões - imagem*/
+/*Sombra interna - box-shadow:inset 6px 6px 13px 0px black;*/
+/*background-size: cover; - centralizar*/
 section.imagem {
   background-color: rgb(42, 41, 41);
   color: white;
+  box-shadow:inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-left: 20px;
+  
+  
   
 }
 
 /*Sessões - imagem - paragrafo (pre)*/
+/*display: inline-block;- traz uma caixa que se alinha ao conteúdo*/
 section.imagem > pre {
   display: inline-block;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.376);
+  padding-right: 30px;
+  padding-left: 5px;
+  background-color: rgba(0, 0, 0, 0.522);
   font-family: var(--fonte3); 
+  text-shadow: 1px 1px 0px black;  
+
+}
+
+/*Imagem - Joaninha*/
+/*background-position: right center;*/
+section#img01 {
+  background-image: url('../imagens/background001.jpg');
+  background-position: right center;
+ 
+}
+
+/*Imagem - Folha escrita*/
+/*background-position: right center;*/
+section#img02 {
+  background-image: url('../imagens/background002.jpg');
+  background-position: right center;
+ 
 }
 
 
@@ -110,5 +145,6 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  font-size: 80%;
 }
