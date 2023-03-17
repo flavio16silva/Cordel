@@ -163,7 +163,7 @@ section#img02 {
 section#img03 {
   background-image: url('../imagens/background004_.jpg');
   background-position: top 75px left 10px;
-  
+  background-position-x: left;  
  
 }
 
@@ -175,5 +175,6 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
-  font-size: 80%;
+  font-size: 1.7vw;
+  /*font-size: 80%;*/
 }
