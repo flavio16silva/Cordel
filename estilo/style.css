@@ -93,7 +93,7 @@ section {
   line-height: 2em;
   padding-left: 5px;
   font-family: var(--fonte3);
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 /*Sessões - normais*/
@@ -109,6 +109,7 @@ section.normal > pre {
   font-family: var(--fonte3);
   padding-left: 25px;
   text-align: left;
+  font-size: 100%;
     
 }
 
@@ -122,10 +123,7 @@ section.imagem {
   background-size: cover;
   background-attachment: fixed;
   padding-left: 20px;
-  margin-bottom: 10px; /*espaço para útilma imagem*/
- 
-  
-  
+  margin-bottom: 10px; /*espaço para útilma imagem*/  
   
 }
 
@@ -139,6 +137,9 @@ section.imagem > pre {
   font-family: var(--fonte3); 
   text-shadow: 1px 3px 3px black;  
   /*1 3 3 - 1 2 0*/
+  font-size: 100%;
+  line-height: 2em;
+  
 
 }
 
@@ -161,7 +162,7 @@ section#img02 {
 /*Imagem - *********/
 /*background-position: right center;*/
 section#img03 {
-  background-image: url('../imagens/background004_.jpg');
+  background-image: url('../imagens/background004_menor.jpg');
   background-position: top 75px left 10px;
   background-position-x: left;  
  
@@ -177,4 +178,12 @@ footer {
   padding: 5px;
   font-size: 1.7vw;
   /*font-size: 80%;*/
+}
+
+@media only screen and (max-width:768px) {
+  section.normal > pre, section.imagem >pre {
+    font-size:4vw;
+   
+  }
+
 }
