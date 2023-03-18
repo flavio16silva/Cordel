@@ -145,7 +145,7 @@ section.imagem > pre {
 
 }
 
-/*Imagem - Joaninha*/
+/*Imagem - Orvalho*/
 /*background-position: right center;*/
 section#img01 {
   background-image: url('../imagens/background006.jpg');
@@ -157,11 +157,11 @@ section#img01 {
 /*background-position: right center;*/
 section#img02 {
   background-image: url('../imagens/background002.jpg');
-  background-position: right center;
- 
+  background-position: center center;
+  /*background-position: right center;*/
 }
 
-/*Imagem - *********/
+/*Imagem - Bíblia/
 /*background-position: right center;*/
 section#img03 {
   background-image: url('../imagens/background004_menor.jpg');
